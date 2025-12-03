@@ -42,7 +42,7 @@ func main() {
     arity := 2
 
     // Create a new tree
-    tree, err := imt.New(keccakHash, depth, zeroValue, arity, nil)
+    tree, err := imt.New[common.Hash](keccakHash, depth, zeroValue, arity, nil)
     if err != nil {
         panic(err)
     }
